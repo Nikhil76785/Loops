@@ -1,11 +1,6 @@
-age = int(input("Enter your age: "))
+m = int(input("Enter the number whose sum you want to find: "))
+sum = 0
 
-if (age >= 10):
-    if (age >= 20):
-        print(f"Your age is {age} and you are allowed to enter the class.")
-    
-    else:
-        print(f"Your age is {age} and you are not allowed to enter the class.")
-
-else:
-    print(f"Your age is {age} and you are not eligible.")
+for i in range(1, m + 1):
+    sum = sum + i
+    print(f"Sum = {sum}")
